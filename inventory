@@ -1,21 +1,20 @@
-
-
-[mongodb]
-roboshop-us-dev-db-mongodb-01.shivalearning.online
-
+[mongodb:vars]
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
+NAME=Shiva-inventory
 
 [mysql]
-roboshop-us-dev-db-mysql-01.shivalearning.online
-roboshop-us-dev-db-mysql-02.shivalearning.online
+roboshop-us-dev-db-mysql-01.joindevops.online
+roboshop-us-dev-db-mysql-02.joindevops.online
 
 [cart]
-roboshop-in-prod-app-cart-01.shivalearning.online
-roboshop-in-prod-app-cart-02.shivalearning.online
-roboshop-in-prod-app-cart-03.shivalearning.online
+roboshop-in-prod-app-cart-01.joindevops.online
+roboshop-in-prod-app-cart-02.joindevops.online
+roboshop-in-prod-app-cart-03.joindevops.online
 
 [user]
-roboshop-in-prod-app-user-01.shivalearning.online
-roboshop-in-prod-app-user-02.shivalearning.online
+roboshop-in-prod-app-user-01.joindevops.online
+roboshop-in-prod-app-user-02.joindevops.online
 
 [db:children]
 mongodb
@@ -23,4 +22,5 @@ mysql
 
 [app:children]
 cart
+user
 

@@ -1,5 +1,5 @@
 - name: install packages
-  hosts: mongodb
+  #hosts: mongodb
   become: yes
   tasks:
   - name: install package
@@ -10,5 +10,5 @@
     loop:
     - nginx
     - postfix
-    - cyrus-sasl-plain
-    - mailx
+      #cyrus-sasl-plain
+      #mailx
